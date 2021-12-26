@@ -1,10 +1,10 @@
 .main-navbar{
-    background: rgba(45, 82, 107, 0.747);
+    background: white;
     margin: 0;
     padding: 0;
-    height: 5vh;
+    height: 5.5vh;
     ul{
-        margin: 0;
+        margin: 0 20px;
         padding:0;
         display: flex;
         flex-direction: row;
@@ -12,6 +12,7 @@
     }
     li{
         display: flex;
+        margin: auto 0;
     }
 
     .nav-link, .logo{
@@ -24,4 +25,21 @@
     .nav-link{
         
     }
+
+    .searchbar{
+        display: flex;
+        border: 0.5px solid gray;
+        background-color: #fff;
+        align-items: center;
+        input{
+            padding: 7px;
+            padding-right: 50px;
+            border: none;
+        }
+        input:focus{
+            outline: none;
+        }    
+    }
+
+    
 }

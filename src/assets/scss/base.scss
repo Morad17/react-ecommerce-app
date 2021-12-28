@@ -2,11 +2,21 @@
 @import './promoBanner.scss';
 @import './categoryItems.scss';
 @import './categories.scss';
+@import './home.scss';
+@import './products.scss';
+@import './product.scss';
 
 
 /*-----Global----*/
 
 body{
+    font-family: 'Merriweather', 'sans-serif';
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: 'Secular One', 'cursive';
+    font-weight: 300;
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
  
 import { Badge } from '@mui/material'
 import { Search, Person, Chat, Notifications, ShoppingCartOutlined } from '@mui/icons-material/'
@@ -19,14 +20,14 @@ const Navbar = () => {
                     </div>
                 </li>
                 <li className="nav-main-links">
-                    <a href="/" className="nav-link">Shop</a>
-                    <a href="/" className="nav-link">Login</a>
-                    <a href="/" className="nav-link">Contact</a>
-                    <a href="/" className="nav-link">
+                    <Link to="/Shop" className="nav-link">Shop</Link>
+                    <Link to="/" className="nav-link">Login</Link>
+                    <Link to="/" className="nav-link">Contact</Link>
+                    <Link to="/" className="nav-link">
                         <Badge badgeContent={4} color="primary">
                             <ShoppingCartOutlined />
                         </Badge>
-                    </a>
+                    </Link>
                     
                 </li>
             </ul>

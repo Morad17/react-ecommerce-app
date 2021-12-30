@@ -9,10 +9,14 @@ const Home = () => {
         <div>
             <PromoBanner />
             <Navbar />
-            <div className="hero-image">
-                <img alt="suit-banner" className="suit-banner" src={SuitBanner} />
+            <div className="content">
+                <div className="hero-image">
+                    <img alt="suit-banner" className="suit-banner" src={SuitBanner} />
+                </div>
+                <h1 className="home-title">Shop Now</h1>
+                <Categories  className="categories"/>
             </div>
-            <Categories />
+            
         </div>
     )
 }

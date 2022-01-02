@@ -51,3 +51,63 @@ export const popularProducts = [
       img:"https://www.pngarts.com/files/3/Women-Jacket-PNG-High-Quality-Image.png",
     },
   ]
+
+  export const products = [
+
+    {
+      id:1,
+      productName: 'Business Textured Suit',
+      img: 'https://www.charlestyrwhitt.com/on/demandware.static/-/Sites-ctshirts-master/default/dwa5716fb3/hi-res/SUB80NAV_MODEL_FRONT.jpg',
+      price: '£199'
+    },
+    {
+      id:2,
+      productName: 'Stripe Birdseye Travel Suit',
+      img: 'https://www.charlestyrwhitt.com/on/demandware.static/-/Sites-ctshirts-master/default/dw7fd0f456/hi-res/SUT26NAV_MODEL_FRONT.jpg',
+      price: '£249'
+    },
+    {
+      id:3,
+      productName: 'Merino Check Business Suit',
+      img: 'https://www.charlestyrwhitt.com/on/demandware.static/-/Sites-ctshirts-master/default/dw56a39c15/hi-res/SUB48BLU_a.jpg',
+      price: '£149'
+    },
+    {
+      id:4,
+      productName: 'Linen Cotton Jacket',
+      img: 'https://www.charlestyrwhitt.com/on/demandware.static/-/Sites-ctshirts-master/default/dw7720a275/hi-res/SEU0093BLU_MODEL_FRONT.jpg',
+      price: '£139'
+    },
+    {
+      id:5,
+      productName: 'Crosshatch Airforce Blue Suit',
+      img: 'https://www.charlestyrwhitt.com/on/demandware.static/-/Sites-ctshirts-master/default/dwbe85e3cb/hi-res/SUE49AFB_MODEL_FRONT.jpg',
+      price: '$£179'
+    },
+    {
+      id:6,
+      productName: 'Italian Jersey Jacket',
+      img: 'https://www.charlestyrwhitt.com/on/demandware.static/-/Sites-ctshirts-master/default/dwad570b1d/hi-res/SEU0090NAV_FRONT.jpg',
+      price: '£169'
+    },
+    {
+      id:7,
+      productName: 'Wool Camel Overcoat',
+      img: 'https://www.charlestyrwhitt.com/on/demandware.static/-/Sites-ctshirts-master/default/dw72858b5f/hi-res/OUF0068CAM_MODEL_FRONT.jpg',
+      price: '£249'
+    },
+    {
+      id:8,
+      productName: 'Italian Wool Cashmere Overcoat',
+      img: 'https://www.charlestyrwhitt.com/on/demandware.static/-/Sites-ctshirts-master/default/dw127fd6f9/hi-res/OUF0043BLK_MODEL_FRONT.jpg',
+      price: '£199'
+    },
+    {
+      id:9,
+      productName: 'Italian Raincoat',
+      img: 'https://www.charlestyrwhitt.com/on/demandware.static/-/Sites-ctshirts-master/default/dw261115de/hi-res/OUR0025RYL_MODEL_FRONT.jpg',
+      price: '£129'
+    },
+    
+
+  ]

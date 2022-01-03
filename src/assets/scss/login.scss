@@ -1,0 +1,62 @@
+.login-container{
+    background:url("https://hdwallpaperim.com/wp-content/uploads/2017/08/26/172772-men-suits.jpg");
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+
+    h2{
+        margin-top: 38vh;
+        font-size: 45px;
+        color: #bdbdbd;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        
+        margin: 0 auto;
+        
+        input{
+            width: 20vw;
+            height: 3vh;
+            font-size: 17px;
+            border-radius: 5px;
+            margin: 8px;
+            border: 1px solid #bdbdbd;
+            background-color: #323a3a;
+            padding-left: 10px;
+            color: white;
+        }
+
+        button{
+            height: 3vh;
+            width: 7vw;
+            text-align: center;
+            margin: 25px auto;
+            border-radius: 5px;
+            border: 1px solid #bdbdbd;
+            background-color: #323a3a;
+            color: white;
+            font-size: 17px;
+            cursor: pointer;
+        }
+
+        
+    }
+
+    .login-links p{
+            color: white;
+            cursor: pointer;
+            text-decoration: underline;
+    }
+
+    input:focus{
+        outline: none;
+    }
+
+    input:hover, button:hover{
+        background-color: #bdbdbd;
+        color:black;
+    }
+}

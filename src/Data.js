@@ -82,7 +82,7 @@ export const popularProducts = [
       id:5,
       productName: 'Crosshatch Airforce Blue Suit',
       img: 'https://www.charlestyrwhitt.com/on/demandware.static/-/Sites-ctshirts-master/default/dwbe85e3cb/hi-res/SUE49AFB_MODEL_FRONT.jpg',
-      price: '$£179'
+      price: '£179'
     },
     {
       id:6,

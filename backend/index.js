@@ -2,6 +2,8 @@ const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
+const userRoute = require("./routes/user");
+const authRoute = require("./routes/auth")
 
 dotenv.config();
 
@@ -11,9 +13,9 @@ mongoose
     .catch((err)=> {console.log(err);
 });
 
-app.get("/api/test", ()=> {
-    console.log("Test is Successfull");
-})
+app.use(express.json());
+app.use("/api/auth", authRoute);
+app.use("/api/users", userRoute);
 
 
 

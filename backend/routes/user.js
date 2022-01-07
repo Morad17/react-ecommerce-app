@@ -32,6 +32,19 @@ router.delete("/:id", verifyTokenAndAuthorization, async (req,res)=>{
     }
 })
 
+//Get User
+
+router.get("/find/:id", verifyTokenAndAdmin, async (req, res)=>{
+   try{ 
+        const user = await User.findById(req.params.Id);
+        const { password, ...others } = user._doc;
+        res.status(200).json(others)
+        
+    }catch (err){
+        res.status(500).json(err);
+    }
+});
+
 //Get All User
 
 router.get("/find/:id", verifyTokenAndAdmin, async (req,res)=>{
@@ -64,10 +77,10 @@ router.get("/stats", verifyTokenAndAdmin, async (req,res)=>{
                 $group:{
                     _id: "$month",
                     total: {$sum: 1},
-                }
-            }
-        ])
-
+                },
+            },
+        ]);
+        res.status(200).json(data)
     }catch(err){
         res(500).json(err)
     }

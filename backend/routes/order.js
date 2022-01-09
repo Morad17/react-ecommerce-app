@@ -44,7 +44,7 @@ router.delete("/:id", verifyTokenAndAdmin, async (req,res)=>{
         res.status(200).json("The Order has been deleted")
 
     }catch(err){
-        res(500).json(err)
+        res.status(500).json(err)
     }
 })
 
@@ -67,7 +67,7 @@ router.get("/", verifyTokenAndAdmin, async (req,res)=>{
         res.status(200).json(orders)
 
     }catch(err){
-        res(500).json(err)
+        res.status(500).json(err)
     }
 })
 
@@ -94,8 +94,10 @@ router.get("/income", verifyTokenAndAdmin, async (req,res)=>{
             }
         ])
         res.status(200).json(income)
-    }catch{
-        res(500).json(err)
+        console.log(income)
+    }catch(err){
+        res.status(500).json(err)
+        
     }
 })
 

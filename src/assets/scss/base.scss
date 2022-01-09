@@ -23,3 +23,19 @@ h1,h2,h3,h4,h5{
     font-family: 'Secular One', 'cursive';
     font-weight: 300;
 }
+
+.pay{
+    display: flex;
+    align-items: center;
+    width: 100vh;
+    justify-content: center;
+    margin: 0 auto;
+    button{
+        margin-top: 40vh;
+        width: 10vw;
+        height: 4vh;
+        background-color: rgb(17, 143, 95);
+        color: white;
+        font-size: 20px;
+    }
+}

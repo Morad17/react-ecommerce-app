@@ -10,9 +10,11 @@ router.post("/", verifyTokenAndAdmin, async (req,res)=>{
 
     try{
         const savedProduct = await newProduct.save();
-        res.status(200).json(savedProduct)
+        res.status(200).json(savedProduct);
+        console.log(savedProduct);
     }catch(err){
         res.status(500).json(err)
+        console.log("error")
     }
 })
 
@@ -77,39 +79,12 @@ router.get("/", async (req,res)=>{
             products = await Product.find()
         }
 
-        res.status(200).json(users)
+        res.status(200).json(products)
 
     }catch(err){
         res(500).json(err)
     }
 })
 
-//Get User Stats
-
-router.get("/stats", verifyTokenAndAdmin, async (req,res)=>{
-    const date = new Date();
-    const lastYear = new Date(date.setFullYear(date.getFullYear() - 1));
-
-    try{
-
-        const data = await User.aggregate([
-            {$match: {createdAt: {$gte: lastYear}}},
-            {
-                $project:{
-                    month: { $month: "$createdAt" },
-                },
-            },
-            {
-                $group:{
-                    _id: "$month",
-                    total: {$sum: 1},
-                },
-            },
-        ]);
-        res.status(200).json(data)
-    }catch(err){
-        res(500).json(err)
-    }
-})
 
 module.exports = router;
